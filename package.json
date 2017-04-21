@@ -1,0 +1,31 @@
+{
+  "name": "my-personal-react-starter-kit",
+  "version": "1.0.0",
+  "description": "lorem ipsum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianMeinhardt/my-personal-react-starter-kit.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "nodejs",
+    "redux-saga",
+    "babel",
+    "es2016"
+  ],
+  "author": "JMeinhardt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianMeinhardt/my-personal-react-starter-kit/issues"
+  },
+  "homepage": "https://github.com/JulianMeinhardt/my-personal-react-starter-kit#readme",
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  }
+}
