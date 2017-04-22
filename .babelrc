@@ -1,8 +1,3 @@
 {
-  "presets": ["env"],
-  "module": {
-  "rules": [
-    { "test": "/.js$/", "exclude": "/node_modules/", "loader": "babel-loader" }
-  ]
-}
+  "presets": ["react", "es2015", "stage-0"]
 }
