@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config.js');
 
+const PORT = 3000;
 
 gulp.task('lint', () => {
   // place code for linting here
@@ -26,7 +27,10 @@ gulp.task('webpack', () => {
 
 gulp.task('run', () => {
   const compiler = webpack(config);
-  new WebpackDevServer(compiler).listen(3000, 'localhost', (err) => {
-    console.error(err, 'Error while starting webpack dev server');
+  new WebpackDevServer(compiler).listen(PORT, 'localhost', (err) => {
+    if (err) {
+      console.error(err, 'Error while starting webpack dev server');
+    }
+    console.log(`Listening at localhost:${PORT} , start compiling...`);
   });
 });
